@@ -35,7 +35,7 @@ plot(vals(:,1),vals(:,2),'linewidth',1.5)
 ylabel('loss')
 yyaxis right 
 plot(vals(:,1),vals(:,3),'linewidth',1.5)
-ylabel('valididation accuracy')
+ylabel('valididation accuracy (%)')
 yticks([y_min 100])
 ylim([y_min,100])
 set(gca, 'XTickLabel', [])
@@ -66,7 +66,7 @@ yticks([y_min 100])
 ylim([y_min,100])
 %set(gca, 'XTickLabel', [])
 title(strcat(strcat('GIN (max valid acc = ',string(round(max(vals(:,3)),2) ) ),'%)'))
-
+xlabel('epochs')
 
 
 %%
@@ -106,7 +106,7 @@ plot(vals(:,1),vals(:,2),'linewidth',1.5)
 ylabel('loss')
 yyaxis right 
 plot(vals(:,1),vals(:,3),'linewidth',1.5)
-ylabel('valididation accuracy')
+ylabel('valididation accuracy (%)')
 yticks([y_min 100])
 ylim([y_min,100])
 set(gca, 'XTickLabel', [])
@@ -137,6 +137,7 @@ yticks([y_min 100])
 ylim([y_min,100])
 %set(gca, 'XTickLabel', [])
 title(strcat(strcat('GIN (max valid acc = ',string(round(max(vals(:,3)),2) ) ),'%)'))
+xlabel('epochs')
 
 %%
 figure();
@@ -175,7 +176,7 @@ plot(vals(:,1),vals(:,2),'linewidth',1.5)
 ylabel('loss')
 yyaxis right 
 plot(vals(:,1),vals(:,3),'linewidth',1.5)
-ylabel('valididation accuracy')
+ylabel('valididation accuracy (%)')
 yticks([y_min 100])
 ylim([y_min,100])
 set(gca, 'XTickLabel', [])
@@ -206,6 +207,7 @@ yticks([y_min 100])
 ylim([y_min,100])
 %set(gca, 'XTickLabel', [])
 title(strcat(strcat('GIN (max valid acc = ',string(round(max(vals(:,3)),2) ) ),'%)'))
+xlabel('epochs')
 
 
 %%
@@ -245,7 +247,7 @@ plot(vals(:,1),vals(:,2),'linewidth',1.5)
 ylabel('loss')
 yyaxis right 
 plot(vals(:,1),vals(:,3),'linewidth',1.5)
-ylabel('valididation accuracy')
+ylabel('valididation accuracy (%)')
 yticks([y_min 100])
 ylim([y_min,100])
 set(gca, 'XTickLabel', [])
@@ -276,4 +278,5 @@ yticks([y_min 100])
 ylim([y_min,100])
 %set(gca, 'XTickLabel', [])
 title(strcat(strcat('GIN (max valid acc = ',string(round(max(vals(:,3)),2) ) ),'%)'))
+xlabel('epochs')
 
