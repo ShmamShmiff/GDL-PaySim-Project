@@ -1,2 +1,7 @@
 #ignore large files
 datasets/
+venv/
+models/models/__pycache__/SAGE.cpython-39.pyc
+models/models/__pycache__/MPNN.cpython-39.pyc
+models/models/__pycache__/SAGE.cpython-39.pyc
+
